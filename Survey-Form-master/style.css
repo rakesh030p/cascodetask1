@@ -1,0 +1,83 @@
+html {
+  background-image: url(https://unsplash.com/photos/8uZPynIu-rQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink);
+  background-repeat: repeat;
+  font-family: Comic Sans MS;
+}
+
+header {
+  font-family: mono;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#survey {
+  background-color: rgb(11, 155, 187);
+  font-size: 20px;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 100px 60px 100px;
+  border-radius: 5px;
+}
+
+#description {
+  text-align: justify;
+}
+
+#survey-form {
+  line-height: 35px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10%;
+}
+
+input[type="radio"] {
+  margin-left: 10%;
+}
+
+#dropdown {
+  font-size: 16px;
+  font-family: Comic Sans MS;
+  margin-left: 10px;
+}
+.field {
+  width: 200px;
+  height: 23px;
+}
+
+#submit {
+  background-color: #86af49;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: mono;
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.field[required].invalid {
+  border-color: red;
+}

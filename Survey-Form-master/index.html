@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>Survey form The pet of my dreams</title>
+
+
+  </head>
+  <body>
+    <div id="survey">
+    <header>
+      <h1 id="title">The pet of my dreams</h1>
+    </header>
+      
+      <p id="description">This survey wants to know which pet you have been dreaming.<br><br>
+      Please answer the folllowing questions. Your answers are so important to us. Thak you :)<br><br>
+      Fields marked with (*) are required.
+      </p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal information:</legend>
+        <div id="personalInfo">
+          <label for="name" id="name-label">Name*:
+          <input type="text" id="name" class="field" placeholder="Enter your name" name="name" required/></label><br> 
+          <label for="email" id="email-label">Email*:
+          <input type="email" id="email" class="field" placeholder="Enter your email" name="email" required></label><br>   
+          <label for="age" id="number-label">Age*:
+          <input type="number" id="age" class="field" placeholder="Enter your age" name="age" min="18" max="60" required></label><br>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Survey questions:</legend>
+        <div>
+        1. What is your dream pet?
+            <select id="dropdown">
+              <option value="A furry cat">A furry snake</option>
+              <option value="A cute pony">A cute cow</option>
+              <option value="A playful puppy">A playful spider</option>
+              <option value="A funy parrot">A funy shark</option>
+             </select>
+        </div><br>
+        <div>
+          2. What color has he/she?<br>
+          <input type="radio" name="color" value="pink" checked>Pink</input><br>
+          <input type="radio" name="color" value="purple">Purple</input><br>
+          <input type="radio" name="color" value="colorful">Colorful</input><br>
+          <input type="radio" name="color" value="white/black">Change every day</input><br>
+        </div><br>
+        <div>
+          3. What name(s) would be perfect for you pet?<br>
+          <input type="checkbox" value="namePet1" checked>Burrito</input><br>
+          <input type="checkbox" value="namePet2">McDoggins</input><br>
+          <input type="checkbox" value="namePet3">Hairy Paw-ter</input><br>
+          <input type="checkbox" value="namePet4">Buffy</input><br>
+          <input type="checkbox" value="namePet5">Pee Wee</input><br>
+        </div><br>
+        <div>
+          4. Why is he/she your dream pet? Please leave your comments.
+          <textarea rows="4"></textarea> 
+        </div>
+      </fieldset>
+      <br>
+      <button id="submit" type="submit"><strong>Submit</strong></button>
+
+    </form>
+    <br>
+    <footer>By Gloria Morales</footer>
+  </div>
+  <script src="function.js"></script>
+  </body>
+</html>
